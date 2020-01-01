@@ -27,14 +27,7 @@ export default class Navbar extends Component {
           <span className="navbar-toggler-icon" />
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <NavLink exact to="/" className="nav-link">
-                Home
-              </NavLink>
-            </li>
-            {dogLinks}
-          </ul>
+          <ul className="navbar-nav">{dogLinks}</ul>
         </div>
       </nav>
     );
