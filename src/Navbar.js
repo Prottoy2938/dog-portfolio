@@ -28,11 +28,6 @@ export default class Navbar extends Component {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
-            <li className="nav-item">
-              <NavLink exact to="/" className="nav-link">
-                Home
-              </NavLink>
-            </li>
             {dogLinks}
           </ul>
         </div>
