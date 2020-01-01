@@ -1,0 +1,30 @@
+img {
+  width: 350px;
+  height: 300px;
+  display: flexbox;
+  text-align: center;
+}
+.card {
+  display: inline-block;
+  width: 800px;
+  height: auto;
+  margin: auto;
+  border: 1px solid rgb(49, 40, 37);
+  margin-bottom: 50px;
+}
+.header {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.font-weight-italic {
+  margin-top: 12px;
+}
+.btn {
+  background: darkslateblue;
+  color: white;
+  margin-bottom: 20px;
+}
+.btn:hover {
+  color: white;
+  background: rgb(33, 28, 61);
+}
