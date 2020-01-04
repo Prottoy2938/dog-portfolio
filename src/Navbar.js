@@ -27,7 +27,13 @@ export default class Navbar extends Component {
           <span className="navbar-toggler-icon" />
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
+<<<<<<< HEAD
           <ul className="navbar-nav">{dogLinks}</ul>
+=======
+          <ul className="navbar-nav">
+            {dogLinks}
+          </ul>
+>>>>>>> 70e752d3f4201cc8c7579b35263df53052a3a936
         </div>
       </nav>
     );
