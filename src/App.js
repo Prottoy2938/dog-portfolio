@@ -47,6 +47,8 @@ class App extends Component {
     ]
   };
   render() {
+    console.log("Dog icon icon by Icons8");
+
     const getDog = props => {
       let name = props.match.params.name;
       let currentDog = this.props.dogs.find(
@@ -55,7 +57,6 @@ class App extends Component {
 
       return <DogDetails {...props} dog={currentDog} />;
     };
-    console.log(this.props);
 
     return (
       <div>
@@ -63,10 +64,25 @@ class App extends Component {
         <Switch>
           <Route
             exact
+            path="/dog-portfolio"
+            render={() => <DogList dogs={this.props.dogs} />}
+          />
+          <Route
+            exact
             path="/dogs"
             render={() => <DogList dogs={this.props.dogs} />}
           />
+          <Route
+            exact
+            path="/"
+            render={() => <DogList dogs={this.props.dogs} />}
+          />
           <Route exact path="/dogs/:name" component={getDog} />} />
+          <Route
+            exact
+            path="/"
+            render={() => <DogList dogs={this.props.dogs} />}
+          />
         </Switch>
       </div>
     );

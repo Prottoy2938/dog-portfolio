@@ -9,8 +9,6 @@ class Navbar extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
   handleClick() {
-    console.log("handlecl");
-
     this.props.history.push("/dogs");
   }
 
@@ -24,14 +22,6 @@ class Navbar extends Component {
           className="navbar navbar-expand-lg navbar-light bg-light"
           style={logoStyle}
         >
-          <a
-            class="navbar-brand"
-            onClick={this.handleClick}
-            style={{ cursor: "pointer" }}
-          >
-            Dog Finder
-          </a>
-
           {this.props.pathDetails.dogs.map((dog, idx) => (
             <NavLink
               key={idx}

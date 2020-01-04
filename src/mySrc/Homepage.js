@@ -10,8 +10,6 @@ export default class Homepage extends Component {
   }
 
   handleClick(dog) {
-    console.log("handleClick ran");
-
     this.props.history.push(`/dogs/${dog}`);
   }
   render() {
@@ -34,7 +32,6 @@ export default class Homepage extends Component {
         </button>
       </div>
     ));
-    console.log(this.props);
 
     return (
       <div>

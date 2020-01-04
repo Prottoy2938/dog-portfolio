@@ -4,7 +4,6 @@ export default class Dog extends Component {
   render() {
     const dogName = this.props.match.params.dogname;
 
-    console.log(this.props.findDogDetails);
     const findDog = this.props.findDogDetails.dogs.filter(
       dogDetails => dogDetails.name === dogName
     );

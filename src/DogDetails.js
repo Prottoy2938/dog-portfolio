@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 export default class DogDetails extends Component {
   render() {
     let { dog } = this.props;
-    console.log(this.props);
 
     return (
       <div className="container">
